@@ -4,7 +4,10 @@
   "description": "Name Generator for Warframe",
   "main": "index.js",
   "scripts": {
-    "test": "mocha test/"
+    "test": "npm run lint && npx mocha test/",
+    "lint": "npx eslint --ignore-path .gitignore .",
+    "lint:fix": "npx eslint --ignore-path .gitignore . --fix",
+    "postversion": "git push && git push --tags"
   },
   "keywords": [
     "warframe",
