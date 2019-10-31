@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "npx nyc --reporter=text npx mocha test/ --exit",
-    "coverage": "npm test && npx nyc report --reporter=text-lcov | npx coveralls",
+    "coverage": "npm test && npx nyc report --reporter=text-lcov > coverage.lcov && cat coverage.lcov | npx coveralls && npx codecov",
     "lint": "npx eslint --ignore-path .gitignore .",
     "lint:fix": "npx eslint --ignore-path .gitignore . --fix"
   },
