@@ -17,4 +17,4 @@ console.log(generator.make({ adjective: true }));
 
 ## Contact me
 
-[![Contact me on Discord](https://img.shields.io/badge/discord-Tobiah%230001-7289DA.svg)](https://discord.gg/0ycgfahdR8gTzWgM "Contact me on Discord: Tobiah#0001")
+[![Contact me on Discord](https://img.shields.io/badge/discord-Tobiah%230001-7289DA.svg)](https://discord.gg/jGZxH9f "Contact me on Discord: Tobiah#0001")
