@@ -20,10 +20,11 @@ branches:
     - /^v\d+\.\d+\.\d+$/
 
 stages:
-  - lint
-  - test
-  - coverage
-  - release
+  - name: lint
+  - name: test
+  - name: coverage
+  - name: release
+    if: branch = master AND type != pull_request
 
 jobs:
   include:
