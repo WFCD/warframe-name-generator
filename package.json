@@ -4,7 +4,7 @@
   "description": "Name Generator for Warframe",
   "main": "index.js",
   "scripts": {
-    "test": "nyc --reporter=text mocha",
+    "test": "nyc --reporter=text --reporter=lcov mocha",
     "coverage": "npm test && nyc report --reporter=text-lcov | coveralls",
     "lint": "eslint .",
     "lint:fix": "eslint . --fix"
