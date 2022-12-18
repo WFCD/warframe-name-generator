@@ -27,7 +27,7 @@
     "eslint-config-airbnb-base": "^14.0.0",
     "eslint-plugin-import": "^2.18.2",
     "greenkeeper-lockfile": "^1.15.1",
-    "mocha": "^6.2.3",
+    "mocha": "^10.2.0",
     "nyc": "^15.1.0",
     "sinon": "^7.5.0"
   },
