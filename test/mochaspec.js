@@ -2,7 +2,7 @@
 
 const chai = require('chai');
 const sinon = require('sinon');
-const { Generator } = require('../index.js');
+const { Generator } = require('../index');
 
 const should = chai.should();
 
