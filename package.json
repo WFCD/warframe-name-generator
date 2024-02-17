@@ -29,7 +29,7 @@
     "greenkeeper-lockfile": "^1.15.1",
     "mocha": "^10.2.0",
     "nyc": "^15.1.0",
-    "sinon": "^7.5.0"
+    "sinon": "^17.0.1"
   },
   "nyc": {
     "reporter": ["lcov", "text"],
