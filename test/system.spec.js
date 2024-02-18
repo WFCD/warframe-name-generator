@@ -1,8 +1,6 @@
-'use strict';
-
-const chai = require('chai');
-const sinon = require('sinon');
-const { Generator } = require('../index');
+import * as chai from 'chai';
+import sinon from 'sinon';
+import Generator from 'warframe-name-generator';
 
 const should = chai.should();
 
@@ -32,7 +30,11 @@ describe('The Generator', () => {
     it('should generate 10k names without issues', () => {
       (() => {
         for (let i = 0; i < 10000; i += 1) {
-          generator.make({ debug: false, adjective: true, nouns: Math.floor(Math.random() * 10) });
+          generator.make({
+            debug: false,
+            adjective: true,
+            nouns: Math.floor(Math.random() * 10),
+          });
         }
       }).should.not.throw();
     });
@@ -56,7 +58,11 @@ describe('The Generator', () => {
 
     it('should include race if requested', () => {
       const name = generator.make({
-        debug: false, adjective: true, type: 'names', includeRace: true, race: 'grineer',
+        debug: false,
+        adjective: true,
+        type: 'names',
+        includeRace: true,
+        race: 'grineer',
       });
       name.should.include('Grineer');
     });
@@ -64,7 +70,10 @@ describe('The Generator', () => {
     it('should generate a string with no spaces if told to ignore spaces', () => {
       (() => {
         const name = generator.make({
-          debug: false, adjective: true, race: 'grineer', spaces: false,
+          debug: false,
+          adjective: true,
+          race: 'grineer',
+          spaces: false,
         });
         name.should.not.include(' ');
       }).should.not.throw();
@@ -97,10 +106,10 @@ describe('The Generator', () => {
   });
   describe('#another', () => {
     it('should retrieve another entry not already in tokens', () => {
-      (() => {
-        const another = generator.another(['De\'Thaym']);
-        another.should.not.include('De\'Thaym');
-      });
+      () => {
+        const another = generator.another(["De'Thaym"]);
+        another.should.not.include("De'Thaym");
+      };
     });
 
     it('should not throw with no parameters', () => {
