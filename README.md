@@ -9,10 +9,14 @@ npm i -S warframe-name-generator
 ## Usage
 
 ```js
-const { Generator } = require('warframe-name-generator');
+import Generator from 'warframe-name-generator';
 
 const generator = new Generator();
 console.log(generator.make({ adjective: true }));
+
+// if you'd like to access the data itself
+import data from 'warframe-name-generator/data';
+// and do stuff w/ it
 ```
 
 ## Contact me
