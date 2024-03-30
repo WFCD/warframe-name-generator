@@ -7,11 +7,9 @@ updates:
       day: "saturday"
       time: "00:00"
     commit-message:
-      prefix: ""
-      prefix-development: "dev"
-      include: "scope"
+      prefix: "ci"
     labels:
-      - "dependencies"
+      - "Scope: Dependencies"
     open-pull-requests-limit: 10
     pull-request-branch-name:
       separator: "-"
@@ -23,11 +21,9 @@ updates:
       day: "saturday"
       time: "00:00"
     commit-message:
-      prefix: ""
-      prefix-development: "dev"
-      include: "scope"
+      prefix: "ci"
     labels:
-      - "dependencies"
+      - "Scope: Dependencies"
     open-pull-requests-limit: 10
     pull-request-branch-name:
       separator: "-"
