@@ -17,6 +17,10 @@ jobs:
           cache: npm
       - run: npm ci
       - run: npm run lint
+      - name: Lint title
+        env:
+          TITLE: ${{ github.event.pull_request.title }}
+        run: npx --no-install commitlint <<< "$TITLE"
   test:
     name: Test
     runs-on: ubuntu-latest
