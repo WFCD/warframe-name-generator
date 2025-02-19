@@ -2,6 +2,14 @@
   "name": "warframe-name-generator",
   "version": "0.0.0-development",
   "description": "Name Generator for Warframe",
+  "keywords": [
+    "warframe",
+    "name generator",
+    "warframe name generator"
+  ],
+  "license": "Apache-2.0",
+  "author": "TobiTenno",
+  "type": "module",
   "exports": {
     ".": {
       "import": "./lib/Generator.js"
@@ -10,62 +18,26 @@
       "import": "./lib/data.js"
     }
   },
-  "type": "module",
   "scripts": {
-    "test": "c8 mocha",
+    "fmt": "npx prettier --check .",
+    "fmt:fix": "npx prettier --write .",
     "lint": "eslint .",
     "lint:fix": "eslint . --fix",
-    "postinstall": "npx install-peerdeps @wfcd/eslint-config@latest -S"
-  },
-  "keywords": [
-    "warframe",
-    "name generator",
-    "warframe name generator"
-  ],
-  "author": "TobiTenno",
-  "license": "Apache-2.0",
-  "engines": {
-    "node": ">=18.19.1",
-    "npm": ">=10.2.4"
+    "prepare": "husky && npx install-peerdeps @wfcd/eslint-config@latest -S",
+    "test": "c8 mocha"
   },
   "devDependencies": {
+    "@commitlint/cli": "^19.7.1",
+    "@commitlint/config-conventional": "^19.7.1",
     "c8": "^10.1.2",
     "chai": "^5.1.0",
+    "husky": "^9.1.7",
+    "lint-staged": "^15.4.3",
     "mocha": "^10.3.0",
     "sinon": "^19.0.2"
   },
-  "c8": {
-    "reporter": [
-      "lcov",
-      "text"
-    ],
-    "skip-full": true
-  },
-  "mocha": {
-    "exit": true,
-    "check-leaks": true,
-    "diff": true,
-    "color": true,
-    "spec": "test/**/*.spec.js"
-  },
-  "eslintIgnore": [],
-  "eslintConfig": {
-    "extends": [
-      "@wfcd/eslint-config/esm"
-    ],
-    "parserOptions": {
-      "sourceType": "module",
-      "parser": "@babel/eslint-parser"
-    }
-  },
-  "babel": {
-    "presets": [
-      "@babel/preset-env"
-    ],
-    "plugins": [
-      "@babel/plugin-transform-class-properties",
-      "@babel/plugin-transform-private-methods"
-    ]
-  },
-  "prettier": "@wfcd/eslint-config/prettier"
+  "engines": {
+    "node": ">=18.19.1",
+    "npm": ">=10.2.4"
+  }
 }

@@ -1,0 +1,5 @@
+exit: true
+check-leaks: true
+diff: true
+color: true
+spec: test/**/*.spec.js

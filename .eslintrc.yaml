@@ -1,0 +1,5 @@
+extends:
+  - '@wfcd/eslint-config/esm'
+parserOptions:
+  sourceType: module
+  parser: '@babel/eslint-parser'

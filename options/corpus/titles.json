@@ -1,12 +1,14 @@
-["Partner",
-"Associate",
-"Trustee",
-"Teller",
-"Creman",
-"Analyst",
-"Tech",
-"Accountant",
-"Board Member",
-"Auditor",
-"Executive",
-"Investor"]
+[
+  "Partner",
+  "Associate",
+  "Trustee",
+  "Teller",
+  "Creman",
+  "Analyst",
+  "Tech",
+  "Accountant",
+  "Board Member",
+  "Auditor",
+  "Executive",
+  "Investor"
+]
