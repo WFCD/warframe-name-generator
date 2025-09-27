@@ -27,7 +27,7 @@
     "test": "c8 mocha"
   },
   "devDependencies": {
-    "@commitlint/cli": "^19.7.1",
+    "@commitlint/cli": "^20.0.0",
     "@commitlint/config-conventional": "^19.7.1",
     "c8": "^10.1.2",
     "chai": "^6.0.1",
