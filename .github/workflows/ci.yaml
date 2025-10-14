@@ -25,14 +25,11 @@ jobs:
     name: Test
     runs-on: ubuntu-latest
     needs: lint
-    strategy:
-      matrix:
-        node-version: ['lts/hydrogen', 'lts/iron', 'lts/*']
     steps:
       - uses: actions/checkout@v5
       - uses: actions/setup-node@v5
         with:
-          node-version: ${{ matrix.node-version }}
+          node-version-file: '.nvmrc'
           cache: npm
       - run: npm install
       - run: npm test
