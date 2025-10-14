@@ -7,6 +7,7 @@
     "name generator",
     "warframe name generator"
   ],
+  "repository": "https://github.com/WFCD/warframe-name-generator",
   "license": "Apache-2.0",
   "author": "TobiTenno",
   "type": "module",
@@ -39,5 +40,6 @@
   "engines": {
     "node": ">=18.19.1",
     "npm": ">=10.2.4"
-  }
+  },
+  "publishConfig": { "provenance": true }
 }
