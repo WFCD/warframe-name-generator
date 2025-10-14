@@ -7,7 +7,7 @@
     "name generator",
     "warframe name generator"
   ],
-  "repository": "https://github.com/WFCD/warframe-nexus-query",
+  "repository": "https://github.com/WFCD/warframe-name-generator",
   "license": "Apache-2.0",
   "author": "TobiTenno",
   "type": "module",
