@@ -2,3 +2,13 @@
 package-lock.json
 test/
 .github/
+
+#  config files
+.babelrc
+.c8rc.json
+.eslintrc.yaml
+.husky/
+.lintstagedrc.yaml
+.mocharc.yaml
+.nvmrc
+.prettierrc
