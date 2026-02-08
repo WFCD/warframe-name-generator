@@ -12,3 +12,4 @@ test/
 .mocharc.yaml
 .nvmrc
 .prettierrc
+commitlint.config.js
