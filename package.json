@@ -33,9 +33,10 @@
   "devDependencies": {
     "@commitlint/cli": "^21.0.0",
     "@commitlint/config-conventional": "^21.0.0",
+    "argue-cli": "^3.1.0",
     "c8": "^11.0.0",
     "chai": "^6.0.1",
-    "conventional-commits-parser": "6.4.0",
+    "conventional-commits-parser": "^7.1.0",
     "husky": "^9.1.7",
     "lint-staged": "^17.0.3",
     "mocha": "^11.1.0",
